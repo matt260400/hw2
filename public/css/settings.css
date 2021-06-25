@@ -1,0 +1,163 @@
+body {
+    background-image: none;
+    background: linear-gradient(217deg, rgba(39, 79, 117, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(36, 119, 119, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(21, 21, 168, 0.767), rgba(0, 0, 255, 0) 70.71%) fixed;
+}
+
+#settingsDiv {
+    position: relative;
+    padding: auto;
+    margin: auto;
+    background-color: rgb(255, 253, 253);
+    width: 40%;
+    height: calc(100% - 75px);
+}
+
+#settingsFields {
+    margin-top: 60px;
+}
+
+h1 {
+    font-size: 3em;
+    padding: 30px 0px 0px 30px;
+    margin: 0px;
+}
+
+.settingsIcon img {
+    width: 25px;
+}
+
+.username, .email, .password, .passwordChoice, .passwordControl, .proPic {
+    margin: 25px 0px 20px 35px;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.passwordChoice, .passwordControl {
+    position: relative;
+}
+
+.textBox {
+    margin-right: 15px;
+    border: 0;
+    height: 50px;
+    width: 80%;
+    border-radius: 8px;
+    border: 1.5px solid black;
+    outline: 0;
+    padding-left: 15px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.95em;
+    background-color: transparent;
+    transition: 150ms ease-in-out;
+}
+
+.compulsory {
+    border: 1.5px solid rgb(221, 0, 0);
+}
+
+.available {
+    border: 1.5px solid rgb(0, 221, 11);
+}
+
+p.inputError, p.inputSuccess {
+    position: absolute;
+    top: -20px;
+    margin: 0px 0px 0px 90px;
+    color: red;
+    font-size: 0.8em;
+}
+
+p.inputSuccess {
+    color: rgb(22, 202, 31);
+}
+
+.passwordChoice p.inputError, .passwordControl p.inputError {
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    margin: 0px 0px 0px 110px;
+}
+
+.typeSection {
+    position: relative;
+}
+
+.passwordChoice {
+    position: relative;
+}
+
+.pencil {
+    cursor: pointer;
+}
+
+/* Label */
+
+#submitButtonDiv {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5px 100px 5px 0px;
+}
+
+#submitButtonDiv.hidden {
+    display: none;
+}
+
+/* Bottoni in fondo alla pagina */
+
+#exeChanges {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+}
+
+#exeChanges button, #submitButton {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 150px;
+    border-radius: 30px;
+    padding: 17px 10px;
+    transition: 150ms ease-in-out;
+}
+
+#submitButton {
+    padding: 15px 8px;
+    width: 100px;
+    font-size: 0.75em;
+    color: white;
+    background-color: rgba(76, 134, 209, 0.692);
+}
+
+.hoverButton:hover, #submitButton {
+    cursor: pointer;
+    transform: scale(1.025);
+}
+
+.cancelButton {
+    background-color: white;
+}
+
+.commitButtonNope {
+    color: rgb(77, 77, 77);
+    background-color: rgb(197, 197, 197);
+}
+
+.commitButtonYep {
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 115, 212);
+    box-shadow: 0px 0px 5px 1px #000000 inset;
+}
+
+.modalWindow {
+    width: 40%;
+    margin: auto;
+    margin-top: 150px;
+}

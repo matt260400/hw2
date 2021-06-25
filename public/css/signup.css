@@ -1,0 +1,378 @@
+section {
+  position: absolute;
+  top: 12%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+@media (max-height: 900px) {
+  section {
+    top: 9%;
+    font-size: 1em;
+  }
+}
+
+@media (max-height: 750px) {
+  section {
+    top: 4%;
+    font-size: 1.2em;
+  }
+}
+
+#registrationPage {
+  max-width: fit-content;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 5px 10px 2px #0000005d;
+  padding: 20px 35px 25px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 150ms ease-in-out;
+}
+
+@media (max-height: 900px) {
+  #registrationPage {
+    transform: scale(0.9);
+    padding: 25px 25px 15px 25px;
+  }
+}
+
+@media (max-height: 750px) {
+  #registrationPage {
+    transform: scale(0.7);
+    padding: 25px 25px 15px 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  #registrationPage {
+    padding: 5px 25px 25px 25px;
+  }
+}
+
+.inputBox p.inputError, #secondPage p#maxArtistError, #thirdPage p#agreementError {
+  margin-top: 0px;
+  margin-bottom: 3px;
+  color: red;
+  font-size: 0.55em;
+  max-width: 500px;
+}
+
+#secondPage p#maxArtistError{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+}
+
+#thirdPage p#agreementError{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 0.7em;
+}
+
+@media (max-height: 900px) {
+  .inputBox p.inputError, #secondPage p#maxArtistError, #thirdPage p#agreementError {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-height: 750px) {
+  .inputBox p.inputError, #secondPage p#maxArtistError, #thirdPage p#agreementError {
+    font-size: 0.7em;
+  }
+}
+
+#registrationPage h1, #secondPage p, #thirdPage p {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+#secondPage p {
+  margin: 0px;
+}
+
+#searchParagraph p {
+  margin-left: 30px;
+}
+
+.inputBox {
+  margin: 30px;
+}
+
+.textBox {
+  color: white;
+  border: 0;
+  height: 50px;
+  width: 500px;
+  border-radius: 8px;
+  border: 1.5px solid white;
+  outline: 0;
+  padding-left: 15px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.8em;
+  background-color: transparent;
+  transition: 150ms ease-in-out;
+}
+
+@media (max-height: 900px) {
+  .textBox {
+    height: 45px;
+    width: 400px;
+  }
+}
+
+input:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.compulsory {
+  border: 1.5px solid rgb(221, 0, 0);
+}
+
+.available {
+  border: 1.5px solid rgb(0, 221, 11);
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+input:focus::placeholder {
+  color: black;
+}
+
+.textBox:focus {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.938);
+  transform: scale(1.01);
+}
+
+.textBox:hover {
+  transform: scale(1.01);
+  transition: 150ms ease-in-out;
+}
+
+#artistSearch.textBox:focus {
+  color: white;
+  background-color: transparent;
+  transform: none;
+  transition: none;
+}
+
+#artistSearch.textBox:focus::placeholder {
+  color: white;
+}
+
+#artistSearch.textBox:hover {
+  transform: none;
+  transition: none;
+}
+
+#spotifySearch {
+  display: flex;
+  align-items: center;
+}
+
+#spotifySearch img {
+  position: relative;
+  right: 75px;
+  width: 25px;
+}
+
+#spotifySearch img:hover {
+  cursor: pointer;
+}
+
+#checkboxContainer {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.7em;
+  color: rgba(255, 255, 255, 0.788);
+}
+
+#checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-right: 6px;
+  width: 18px;
+  height: 18px;
+  background-color: rgb(255, 255, 255);
+}
+
+#tick {
+  border-radius: 4px;
+  width: 12px;
+  height: 12px;
+}
+
+div#tick.checkboxColor {
+  background-color: #613c29c2;
+}
+
+#tick:hover {
+  cursor: pointer;
+}
+
+#registerButton {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 16.5px;
+  padding-bottom: 16.5px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  color: black;
+  font-family: "Quicksand", sans-serif;
+}
+
+#registerButton:hover {
+  cursor: pointer;
+}
+
+.pageSelection {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#secondPage .pageSelection p, #thirdPage .pageSelection p {
+  color: black;
+}
+
+#secondPage .pageSelection div, #thirdPage .pageSelection div {
+  width: 180px;
+}
+
+.goToFirstPage, .goToSecondPage, .goBackToSecondPage, .goToThirdPage {
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
+}
+
+.goToFirstPage p, .goToSecondPage p, .goBackToSecondPage p, .goToThirdPage p {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.goToFirstPage:hover, .goToSecondPage:hover, .goBackToSecondPage:hover, .goToThirdPage:hover {
+  cursor: pointer;
+}
+
+#containerShortcut {
+  margin: 0;
+}
+
+#containerShortcut a {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 1.1em;
+}
+
+#containerShortcut p {
+  margin-top: 25px;
+  font-size: 0.7em;
+}
+
+#artistList {
+  margin-bottom: 15px;
+}
+
+.artist {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#secondPage .artist div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.9em;
+  width: 25%;
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.568);
+  height: 45px;
+  max-height: fit-content;
+}
+
+#secondPage .artist img, #secondPage #favouriteArtists img {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#secondPage #favouriteArtists img {
+  width: 45px;
+  margin: 0px;
+  margin-bottom: 7px;
+}
+
+#secondPage #favouriteArtists img.removeDiv {
+  width: 12px;
+}
+
+.removeDiv {
+  position: relative;
+  top: 10px;
+  left: 32px;
+  width: 5px;
+  padding: 4px;
+  background-color: rgba(0, 0, 0, 0.651);
+}
+
+.removeDiv:hover {
+  cursor: pointer;
+}
+
+#secondPage .artist div:hover {
+  cursor: pointer;
+}
+
+#secondPage #favouriteArtists {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  font-size: 0.65em;
+}
+
+#secondPage #favouriteArtists div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 80px;
+  max-width: 80px;
+  padding: 8px;
+  padding-top: 0px;
+  border-radius: 15px;
+  margin: 10px 12px 15px 12px;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+input:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s;
+}

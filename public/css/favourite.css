@@ -1,0 +1,85 @@
+.favouriteSelection {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.favouriteSelectionDiv{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.favouriteSelection input{
+    margin-right: 205px;
+    width: 300px;
+    transition: 250ms ease-out;
+}
+
+.favouriteSelection input:focus{
+    width: 400px;
+}
+
+.favouriteSelection p {
+    margin: 0px;
+    padding: 7px 10px;
+    background-color: rgba(0, 0, 0, 0.493);
+    border-radius: 5px;
+    transition: 150ms ease;
+}
+
+.favouriteSelection p:hover {
+    /*background-color: rgba(32, 32, 32, 0.349);*/
+    background-color: rgba(15, 15, 15, 0.493);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.favouriteSelection p.unclicked {
+    background-color: rgba(32, 32, 32, 0.349);
+}
+
+#favourites div.card img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+#favourites div.imgDiv div.addedToFavourite img {
+    width: 30px;
+}
+
+.favouriteArtistContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.favouriteArtistContainer.hidden{
+    display: none;
+}
+
+.favouriteTrackContainer.hidden{
+    display: none;
+}
+
+.favouriteTrackContainer {
+    margin-top: 50px;
+}
+
+.favouriteTrackContainer .track {
+    margin-top: 10px;
+    width: 90%;
+}
+
+.track.hidden{
+    display: none;
+}
+
+.favouriteArtistContainer.emptyArtists{
+    justify-content: flex-start;
+    margin-top: 34px;
+}

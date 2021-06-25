@@ -1,0 +1,210 @@
+body {
+    margin: 0px;
+    background: linear-gradient(to top, rgb(16, 16, 16) 60%, rgb(95, 28, 39) 100%) fixed;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+#mainPage {
+    margin-left: 250px;
+}
+
+.hidden {
+    display: none;
+}
+
+.line {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
+#mainPage .line {
+    margin-top: 14px;
+    width: 99%;
+}
+
+#sidebar {
+    position: fixed;
+    padding-left: 25px;
+    padding-top: 10px;
+    background-color: #0c0c0c;
+    width: 210px;
+    height: 100%;
+    top: 0;
+}
+
+#sidebarContents {
+    width: 180px;
+    margin-top: 5px;
+    font-size: 1.1em;
+}
+
+#siteName {
+    font-size: 2em;
+    text-align: center;
+}
+
+#sidebarContents a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    padding: 10px;
+    transition-duration: 300ms;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+#sidebarContents a:hover {
+    cursor: pointer;
+    background-color: rgba(218, 218, 218, 0.3);
+    text-decoration: underline;
+}
+
+#sidebarContents a.pagina_attuale {
+    background: linear-gradient(to right, rgb(36, 11, 54), rgb(195, 20, 50));
+}
+
+#sidebarContents img {
+    width: 25px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 9px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+form img {
+    position: relative;
+    right: 40px;
+    width: 20px;
+}
+
+form img:hover {
+    cursor: pointer;
+}
+
+#searchBar {
+    margin: 0px;
+}
+
+.textBox {
+    border: 0;
+    height: 40px;
+    width: 400px;
+    border-radius: 15px;
+    outline: 0;
+    padding-left: 15px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1em;
+    transition: 150ms ease-in-out;
+}
+
+#profile {
+    margin: 9px 95px 7px 6px;
+    position: relative;
+}
+
+.proPicUsername {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 25px 5px 0px;
+    border-radius: 100px;
+    background-color: rgb(46, 46, 46);
+    transition: 250ms ease-in-out;
+}
+
+.proPicUsername:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: rgb(97, 97, 97);
+}
+
+.proPicUsername p {
+    margin: 0px;
+    margin-left: 5px;
+    margin-right: 15px;
+    font-size: 0.9em;
+}
+
+#proPicImage {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#profile img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+
+.triangleUp {
+    margin-top: 3px;
+    margin-left: 10px;
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid white;
+}
+
+.triangleDown {
+    margin-top: 4px;
+    margin-left: 10px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid white;
+}
+
+#rapidSettings {
+    background-color: rgb(46, 46, 46);
+    border-radius: 15px;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#rapidSettings div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#rapidSettings a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: right;
+    font-size: 0.9em;
+    color: white;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#rapidSettings img {
+    height: 18px;
+    border-radius: 0px;
+    width: auto;
+}
+
+.hideSettings {
+    visibility: hidden
+}

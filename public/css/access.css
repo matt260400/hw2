@@ -1,0 +1,123 @@
+/* Body e navbar*/
+
+body{
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size: fit-content;
+    width: 100%;
+}
+
+@media (min-width: 1920px) {
+    body {
+        background-size: cover;
+    }
+}
+
+nav{
+    color: white;
+    background-color: rgb(4, 1, 19);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav p{
+    margin: 0px;
+}
+
+#logo img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 75px;
+}
+
+#links{
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#links a{
+    margin-left: 35px;
+    margin-right: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+    height: 75px;
+    background-color: rgb(4, 1, 19);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 75px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+}
+
+footer p{
+    cursor: pointer;
+}
+
+footer div img{
+    width: 20px;
+    margin: 0px;
+}
+
+#infoView{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+
+    color: white;
+    font-size: 1.4em;
+}
+
+#infoView div{
+    border-radius: 15px;
+    padding: 75px 100px 20px 100px;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+#infoTitle{
+    margin-top: 0;
+    margin-bottom: 55px;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+#infoView strong{
+    text-decoration: underline;
+}
+
+#closeInfo{
+    margin-top: 75px;
+    text-align: right;
+    text-decoration: underline;
+}
+
+#closeInfo:hover{
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+.noScroll{
+    overflow: hidden;
+}

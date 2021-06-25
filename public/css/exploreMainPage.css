@@ -1,0 +1,307 @@
+/* CSS per Caricamento Pagina */
+
+#loadingGIF {
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: calc(50% - 250px);
+}
+
+#loadingGIF p {
+    font-size: 1.1em;
+}
+
+#loadingGIF p sup {
+    font-size: 0.6em;
+}
+
+/* CSS per Tracce */
+
+#favouriteArtistsTopTracks, #suggestedArtists {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-height: 375px;
+    font-size: 0.9em;
+    margin-right: 120px;
+    margin-left: 50px;
+    overflow-x: hidden;
+}
+
+#suggestedArtists {
+    max-height: 700px;
+}
+
+div.trackImg img {
+    max-width: 60px;
+    border-radius: 6px;
+    margin: 15px;
+    transition: 200ms ease-in;
+}
+
+div.trackImg.opacity:hover img {
+    opacity: 0.3;
+}
+
+div.trackImg:hover .favouriteButton, div.trackImg:hover .addedToFavourite {
+    cursor: pointer;
+    opacity: 1;
+}
+
+div.trackImg:hover .favouriteButton img {
+    opacity: 1;
+}
+
+.track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+    flex: 0 0 25%;
+    margin: 7px 45px 7px 45px;
+    width: 500px;
+    transition: 150ms ease-in;
+}
+
+.favouriteButton, .addedToFavourite {
+    position: absolute;
+    top: 42%;
+    left: 41%;
+    opacity: 0;
+    transition: 450ms ease;
+}
+
+.addedToFavourite {
+    top: 12%;
+    left: 5.8%;
+    opacity: 1;
+}
+
+div.trackImg .favouriteButton img, div.trackImg .addedToFavourite img {
+    width: 18px;
+    margin: 0px;
+}
+
+div.trackImg .addedToFavourite img {
+    width: 20px;
+}
+
+.track p {
+    margin: 1.5px;
+}
+
+.trackImg {
+    position: relative;
+}
+
+.track .trackLink {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: 20px;
+}
+
+.track .trackLink img {
+    width: 20px;
+    margin-bottom: 6px;
+}
+
+.track .trackImgAndInfoDiv {
+    display: flex;
+    align-items: center;
+}
+
+.track .trackTitle {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.track .trackAuthor {
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.596);
+}
+
+.trackLinksDiv {
+    padding-right: 15px;
+}
+
+h1 {
+    font-size: 1.8em;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+#scroll, #scrollArtist {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px 0px 60px 60px;
+}
+
+.arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+}
+
+.arrow.left {
+    position: absolute;
+    top: -18px;
+    left: 20px;
+    border-width: 0 4px 4px 0;
+    padding: 7px;
+}
+
+#scrollButtonLeft, #scrollButtonLeftArtist, .left {
+    margin-left: 20px;
+    margin-right: 20px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+#scrollButtonLeft:hover, #scrollButtonRight:hover, #scrollButtonLeftArtist:hover, #scrollButtonRightArtist:hover, .left:hover {
+    cursor: pointer;
+}
+
+#scrollButtonRight, #scrollButtonRightArtist {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+/* CSS per Album & Consigli */
+
+#favouriteArtistsAlbums {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 95px;
+    margin-bottom: 60px;
+}
+
+.album, .artist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(26, 26, 26, 0.712);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 150ms ease-in;
+    margin-right: 35px;
+    margin-bottom: 35px;
+}
+
+.artist {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    min-height: 100px;
+    max-height: 100px;
+    position: relative;
+}
+
+.album:hover, .artist:hover, .track:hover {
+    background-color: rgba(53, 53, 53, 0.712);
+}
+
+.track:hover {
+    border-radius: 7px;
+}
+
+.albumInfoDiv p, .artistInfoDiv p {
+    max-width: 180px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden
+}
+
+.artistInfoDiv p {
+    text-align: left;
+    margin-left: 25px;
+}
+
+.albumTitle, .artistName {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.albumAuthor, .artistGenre {
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.596);
+}
+
+.albumImgA img, .artistImgA img {
+    border-radius: 15px;
+    width: 180px;
+}
+
+.artistImgA img {
+    width: 110px;
+}
+
+/* Bottone per tornare in cima alla pagina */
+
+.scrollToTop {
+    position: fixed;
+    right: 0.7%;
+    bottom: 3%;
+}
+
+.scrollToTop:hover {
+    cursor: pointer;
+}
+
+.scrollToTop img {
+    width: 40px;
+}
+
+/* Warning se non ci sono preferiti */
+
+.emptyHomepageDiv h1 {
+    font-size: 2.9em;
+    text-transform: uppercase;
+}
+
+.emptyHomepageDiv p {
+    margin-left: 55px;
+    font-size: 1.25em;
+}
+
+.emptyHomepageMeme {
+    margin: 50px 0px 0px 70px;
+}
+
+/* Copia e incolla */
+
+.artist div.copy, .artist div.copySuccessDiv {
+    position: absolute;
+    bottom: 12px;
+    right: 15px;
+}
+
+.artist div.copySuccessDiv {
+    background-color: wheat;
+    color: black;
+    padding: 5px 7px;
+    border-radius: 5px;
+    bottom: -30px;
+    right: -8px;
+}
+
+.artist div.copySuccessDiv p {
+    margin: 0px;
+}
+
+.artist div.copy:hover {
+    cursor: pointer;
+}
+
+.artist div.copy img {
+    width: 20px;
+}

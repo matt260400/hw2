@@ -1,0 +1,106 @@
+.resultsCard {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.resultsCard img {
+    border-radius: 15px;
+    width: 200px;
+    transition: 200ms ease-in;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(26, 26, 26, 0.712);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 150ms ease-in;
+    margin-right: 35px;
+    margin-bottom: 35px;
+}
+
+.cardInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardInfo p {
+    max-width: 160px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    padding-right: 15px;
+    font-size: 1.1em;
+}
+
+.cardInfo img {
+    max-width: 30px;
+    padding-bottom: 5px;
+}
+
+#searchInfo {
+    margin-top: 55px;
+    margin-bottom: 25px;
+}
+
+#searchInfo div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+#searchInfo img {
+    max-width: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Gestione bottone preferiti */
+
+div.imgDiv{
+    position: relative;
+}
+
+div.imgDiv.opacity:hover img {
+    opacity: 0.3;
+}
+
+div.imgDiv:hover .favouriteButton, div.imgDiv:hover .addedToFavourite {
+    cursor: pointer;
+    opacity: 1;
+}
+
+div.imgDiv:hover .favouriteButton img, div.imgDiv:hover .addedToFavourite img{
+    opacity: 1;
+}
+
+div.imgDiv .favouriteButton, div.imgDiv .addedToFavourite {
+    position: absolute;
+    top: 42%;
+    left: 41%;
+    opacity: 0;
+    transition: 450ms ease;
+}
+
+div.imgDiv .addedToFavourite{
+    top: 1%;
+    left: 1%;
+    opacity: 1;
+}
+
+div.imgDiv .favouriteButton img, div.imgDiv .addedToFavourite img {
+    width: 35px;
+    margin: 0px;
+}
+
+div.imgDiv .addedToFavourite img{
+    width: 40px;
+}

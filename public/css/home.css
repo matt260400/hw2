@@ -1,0 +1,283 @@
+body {
+    position: relative;
+    margin: 0px;
+    background: rgb(230, 230, 230);
+    text-shadow: 3px 3px 1px black;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+header {
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/background-image?retiredLocale=it */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/wallpaper.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    box-shadow: 20px 85px 70px 75px #111111 inset, -30px -60px 60px 55px #111111 inset;
+    position: relative;
+}
+
+@media (max-width: 500px) {
+    header {
+        height: 350px;
+        box-shadow: 50px 50px 50px 50px #141445 inset, -50px -50px 50px 50px #141445 inset;
+    }
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+@media (max-width: 500px) {
+    header nav {
+        padding: 20px;
+        padding-right: 30px;
+    }
+}
+
+#logo img {
+    width: 17%;
+    margin-top: 25px;
+    margin-left: 80px;
+}
+
+@media (max-width: 500px) {
+    #logo img {
+        width: 15%;
+        margin-top: 0;
+        margin-left: 5%;
+    }
+}
+
+#links {
+    margin-right: 80px;
+}
+
+#links a {
+    margin-right: 20px;
+    margin-left: 20px;
+    text-shadow: 5px 5px 1px black;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a.button {
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 100px;
+    background-color: white;
+}
+
+a img {
+    position: relative;
+    top: 10px;
+    width: 35px;
+}
+
+#presentation {
+    margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#presentation h1 {
+    font-size: 4em;
+    background-color: rgba(0, 0, 0, 0.915);
+    padding: 15px 45px;
+    border-radius: 15px;
+}
+
+#presentation a {
+    color: black;
+    text-shadow: none;
+    text-decoration: none;
+    background-color: white;
+    padding: 20px 15px;
+    border-radius: 15px;
+    font-size: 1.4em;
+}
+
+@media (max-width: 500px) {
+    #presentation h1 {
+        font-size: 2em;
+        line-height: 65px;
+    }
+}
+
+#menu {
+    display: none;
+    cursor: pointer;
+}
+
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+@media (max-width: 500px) {
+    #links {
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.videoText {
+    width: 70%;
+    margin-top: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.videoText.inverse {
+    flex-direction: row-reverse;
+}
+
+.videoText .description {
+    margin-left: 55px;
+}
+
+.videoText.inverse .description {
+    margin: 0px;
+}
+
+.videoText h1 {
+    font-size: 3.2em;
+    color: black;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.videoText p {
+    font-size: 1.4em;
+    color: black;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.videoText p.disclaimer {
+    font-size: 0.05em;
+}
+
+.line {
+    width: 85%;
+    border-top: 1px solid rgba(0, 0, 0, 0.6);
+    margin-top: 100px;
+}
+
+footer {
+    margin-top: 100px;
+    height: 85px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+footer p {
+    cursor: pointer;
+}
+
+footer div img {
+    width: 20px;
+    margin: 0px;
+}
+
+#infoView {
+    text-shadow: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    color: white;
+    font-size: 1.4em;
+}
+
+#infoView div {
+    border-radius: 15px;
+    padding: 75px 100px 20px 100px;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+#infoTitle {
+    margin-top: 0;
+    margin-bottom: 55px;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+#infoView strong {
+    text-decoration: underline;
+}
+
+.modalWindow{
+    margin-top: 200px;
+}
+
+#closeInfo {
+    margin-top: 75px;
+    text-align: right;
+    text-decoration: underline;
+}
+
+#closeInfo:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.noScroll {
+    overflow: hidden;
+}
+
+video{
+    transition: 350ms ease-out;
+    border-radius: 10px;
+}
+
+video:hover{
+    transform: scale(1.08);
+}
+
+.scrollToTop {
+    position: fixed;
+    right: 0.7%;
+    bottom: 3%;
+}
+
+.scrollToTop:hover {
+    cursor: pointer;
+}
+
+.scrollToTop img {
+    width: 40px;
+}
